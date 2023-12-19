@@ -48,7 +48,7 @@ const Slider = () => {
               checked={index === radioIdx}
               readOnly
               onClick={() => {
-                changeCard(radioIdx);
+                nextCard(radioIdx);
               }}
             />
           ))}

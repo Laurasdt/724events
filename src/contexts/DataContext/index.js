@@ -15,10 +15,10 @@ export const api = {
     return json.json();
   },
   loadDataLast: async () => {
-    const json2 = await fetch("/events.json");
-    const json3 = await json2.json();
-    const json4 = json3.events.reduce((a, b) => (new Date(a.date) > new Date(b.date) ? a : b));
-    return json4;
+    const jsonA = await fetch("/events.json");
+    const jsonB = await jsonA.json();
+    const jsonC = jsonB.events.reduce((a, b) => (new Date(a.date) > new Date(b.date) ? a : b));
+    return jsonC;
   },
 };
 
